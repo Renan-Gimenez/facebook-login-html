@@ -1,0 +1,419 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'arial', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: #f0f2f5;
+
+    display: flex; 
+    flex-direction: column;
+
+    line-height: 1.6;
+
+    overflow-y: auto;
+    /* overflow-x: hidden; */
+}
+
+hr {
+    border: 1px;
+}
+
+.middle {
+    /* height: 100%; */
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    padding-top: 36px;
+}
+
+.logo {
+    width: 240px;
+    margin-bottom: -5px;
+}
+
+.mainform {
+    height: 456px;
+    width: 396px;
+
+    text-align: center;
+
+    margin-bottom: 101px;
+}
+
+.entrenoface{
+    width: 100%;
+    
+    color: #1c1e21;
+    font-size: 18px;
+
+    margin: 20px 0px 12px;
+}
+
+.form {
+    background-color: #fff;
+
+    /* border: 1px solid #dddfe2; */
+
+    width: 396px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0px 0px 20px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.form a {
+    text-decoration: none;
+
+    color: #1877f2;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.form a:hover {
+    text-decoration: underline;
+
+    font-family: inherit;
+}
+
+.input {
+    height: 52px;
+    width: 364px;
+
+    margin: 6px 0px;
+    padding: 14px 16px;
+    font-size: 17px;
+
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+}
+
+input::placeholder{
+    color: #90949c;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.button {
+    height: 48px;
+    width: 364px;
+
+    color: #fff;
+
+    background-color: #1877f2;
+
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    
+    margin: 6px 0px 14px;
+}
+
+.button:hover {
+    cursor: pointer;
+
+    background-color: #166fe5;
+}
+
+.line {
+    width: 364px;
+
+    margin: 20px 16px;
+    border-bottom: 1px solid #dadde1;
+}
+
+.mainline2 {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+
+    padding: 8px 8px 10px;
+}
+
+.line2 {
+    height: 1px;
+    width: 100%;
+
+    margin: 10px 0px;
+
+    background-color: #dadde1;
+}
+
+.mainline2 span {
+    font-size: 12px;
+    color: #96999e;
+
+    margin: 0px 15px;
+
+    display: flex;
+    align-items: center;
+}
+
+.novaconta {
+    background-color: #42b72a;
+    color: #fff;
+
+    font-weight: bold;
+
+    height: 48px;
+    width: 166.16px;
+
+    margin-top: 3px;
+
+    border-radius: 6px;
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+.novaconta:hover {
+    background-color: #36a420;
+}
+
+.divspan {
+    display: none;
+
+    margin-top: 28px;
+    font-size: 14px;
+
+    color: #1c1e21;
+}
+
+.divspan a{
+    font-weight: 600;
+
+    color: #1c1e21;
+    text-decoration: none;
+}
+
+.divspan a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    /* min-height: 325px; */
+    height: 100%;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+
+    font-size: 12px;
+
+    padding: 0px 40px;
+
+    margin: 0 auto;
+    /* text-align: center; */
+
+    background-color: #fff;
+    color: #8a8d91;
+}
+
+.meta{
+    font-size: 11px;
+    color: #737373;
+}
+
+.mainfooter {
+    max-width: 980px;
+
+    padding: 76px 0px 0px;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 7px;    
+}
+
+.linefooter {
+    width: 100%;
+    margin: 8px 0px;
+
+    border-bottom: 1px solid #dddfe2;
+}
+
+.mais li {
+    margin-right: 17px;
+}
+
+.mais li a, .idiomas li a {
+    color: #8a8d91;
+    text-decoration: none;
+}
+
+.mais li a:hover, .idiomas li a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px)
+{
+    body {
+        background-color: #fff;
+    }
+
+    .input {
+        height: 44px;
+        width: 100%;
+        max-width: 381px;
+
+        font-size: 14px;
+
+        padding: 12px;
+        margin: 8px 0px 0px;
+
+        border-radius: 3px;
+
+        background-color: #f5f6f7;
+    }
+    
+    .button {
+        height: 40px;
+        width: 100%;
+        max-width: 381px;
+        font-size: 17px;
+        text-shadow: 0 -1px 0 rgb(0 0 0 / 35%);
+
+        border-radius: 3px;
+        
+        margin: 12px 0px 10px;
+    }
+    
+    .novaconta {
+        height: 36px;
+        max-width: 142.48px;
+        width: 100%;
+        font-size: 14px;
+
+        background-color: #00a400;
+        text-shadow: 0 -1px 0 rgb(0 0 0 / 35%);
+
+        border-radius: 3px;
+
+        /* background-color: red; */
+    }
+
+    .middle {
+        height: auto;
+        width: 100%;
+
+        padding-top: 40px;
+
+        flex-direction: column;
+
+        justify-content: start;
+
+        background-color: white;
+        padding: 0;
+    }
+
+    .mainform {
+        height: auto;
+        width: 100%;
+        padding: 0px 16px 0px 16px;
+
+        margin-bottom: 0px;
+    }
+
+    .form {
+        width: 100%;
+
+        box-shadow: none;
+        padding: 0px 0px 24px;
+    }
+
+    .email{
+        margin: 0px;
+
+    }
+
+    .mainline2 {
+        padding: 12px 0px 5px;
+        max-width: 381px;
+    }
+
+    .divspan{
+        display: none;
+    }
+
+    .mainline2 span{
+        font-size: 14px;
+    }
+
+    .logo {
+        /* height: 39px; */
+        /* width: auto; */
+        width: 112px;
+        height: auto;
+        margin: 8px 0px 0px;
+    }
+
+    .entrenoface {
+        display: none;
+    }
+    
+    footer {
+        height: auto;
+        width: 100%;
+
+    }
+
+    .mainfooter {
+        padding-top: 0;
+    }
+
+    .linefooter {
+        display: none;
+    }
+
+    .idiomas {
+        max-height: 100px;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .idiomas {
+        display: none;
+    }
+
+    .mais {
+        display: none;
+    }
+
+    .meta {
+        text-align: center;
+    }
+
+    #meta {
+        margin: 0 auto;
+    }
+}
+
+.debug {
+    border: 1px solid red;
+}
